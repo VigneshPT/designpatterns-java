@@ -1,4 +1,4 @@
-package StrategyPattern;
+package StrategyPattern.compression;
 
 import java.io.File;
 import java.util.ArrayList;
