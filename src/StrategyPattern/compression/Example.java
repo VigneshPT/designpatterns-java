@@ -30,7 +30,7 @@ import java.util.ArrayList;
 public class Example {
 	public static void main(String[] args) {
 		CompressionContext ctx = new CompressionContext();
-		ctx.setCompressionStrategy(new ZipCompressionStrategy());
+		ctx.setCompressionStrategy(new RarCompressionStrategy());
 		
 		ArrayList<File> files = new ArrayList<File>();
 		files.add(new File(""));
