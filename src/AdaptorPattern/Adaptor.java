@@ -13,7 +13,9 @@ public class Adaptor implements IPayable {
 		// TODO Auto-generated method stub
 		
 		double valueInUSD = (double)inRupees/(double)exchangeRateForUSD;
-		this.legacyPaymentGateway.pay(valueInUSD);
+		
+		System.out.println("\nPaying through new interface using Adapter to pay with legacy system");
+		this.legacyPaymentGateway.oldPayMethod(valueInUSD);
 		
 	}
 	
