@@ -3,7 +3,12 @@ package AdaptorPattern;
 public class AdaptorExample {
 
 	/**
-	 * Create a LegacyPaymentGateway class, with some method like 
+	 * Create a LegacyPaymentGateway class, with some method like oldPayMethod, which expects USD
+	 * Create an interface for new systems IPayable with `pay` method that expects INR. 
+	 * Create a concrete class for that interface, something like ModernPaymentGateway
+	 * Create an Adapter class which implements the new Interface
+	 * Create a constructor which accepts the legacy object and save it
+ 	 * implement the interface method, transform the input from the adapter and pass to legacy method.
 	 * 
 	 */
 	public static void main(String[] args) {
